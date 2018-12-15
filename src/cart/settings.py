@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static_root'),
+    # os.path.join(BASE_DIR, 'static'),
 ]
 
 VENV_PATH = os.path.dirname(BASE_DIR)
@@ -136,10 +136,10 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
 
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
-)
+# AUTHENTICATION_BACKENDS = (
+#     'django.contrib.auth.backends.ModelBackend',
+#     'allauth.account.auth_backends.AuthenticationBackend',
+# )
 
 SITE_ID = 1
 
